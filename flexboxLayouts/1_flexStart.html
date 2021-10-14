@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flexbox</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Akronim&family=Roboto:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	
+	<style>
+				
+		body{
+			font-family: 'Roboto', sans-serif;
+			margin: 0px;
+		}
+		header{
+		background-color:black;
+			color: orange;
+			height: 50vh;
+			display:flex;
+			align-items: center;
+			justify-content: center;
+			background-image: url("images/moon.jpg");
+			background-size:cover;
+			background-attachment: fixed;
+			padding-left: 20px;
+		}
+		header h1{
+			font-size: 50px;
+			font-family: 'Akronim', cursive;
+		}
+	
+		.flex-container{
+			display: flex;
+			align-items: stretch;
+		
+		}
+		.flex-container div{
+			background-color: coral;
+			margin:10px;
+
+			
+		}
+		#item1{
+			flex:25%;
+			padding: 15px 0px;
+		}
+		#item1 img{width: 100%}
+			#item2{
+			flex:50%;
+		}
+			#item3{
+			flex:25%;
+		}
+		
+		.btn {background-color: darkorange;
+			border: none;
+			padding:15px 32px;
+			font-size:16px;
+			width: 100%;
+		}
+		
+		.btn:hover{
+			background-color: black;
+			color: orange;
+		} 
+		
+		
+		
+		
+		
+			#item4{
+			flex:50%;
+				padding: 15px 0px;
+		}
+			#item5{
+			flex:50%;
+		}
+		
+			#item6{
+			flex: 25%;
+				background-color: transparent;
+		}
+			#item7{
+			flex:50%;
+				padding: 15px 0px;
+				background-color: transparent;
+				color: orange;
+				text-align: center;
+		}
+		
+			#item8{
+			flex:25%;
+				background-color: transparent;
+		}
+			footer{background-color: black;
+			padding:50px 0px;
+		}
+		
+		@media (max-width:800px){
+			.flex-container{
+				flex-direction:column; 
+			}
+		}
+		
+		
+	</style>
+</head>
+
+<body>
+	
+	<header>
+		
+		<h1>The Page Heading</h1>
+	</header>
+	
+	<div class="flex-container">
+		<div id="item1">
+		<img src="images/person.jpg" alt="spoopy lady">
+		</div>
+		<div id="item2"><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum pariatur doloribus dolorum quibusdam, cumque aspernatur commodi nesciunt rem cupiditate error ullam molestiae, delectus ipsam sed sequi quam animi repudiandae. Totam tempora alias maxime, molestiae, eligendi, doloribus eveniet repudiandae eaque mollitia dicta saepe. Pariatur voluptate inventore necessitatibus illo expedita eos tempore numquam rem veritatis soluta debitis eius autem a deserunt, ex nulla quasi sequi facilis rerum? Odit consectetur sapiente facilis. Consequuntur vero cum doloremque quidem minima cupiditate voluptates rem, placeat ex sapiente. Distinctio, pariatur eveniet nam dolorem possimus aut odio, alias quia ab dicta, saepe molestiae laboriosam repellat sequi culpa dolorum.</p></div>
+		<div id="item3"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus numquam maxime distinctio dignissimos ipsam, et voluptas ut eos dolorem maiores blanditiis facilis reprehenderit, tenetur doloribus.</p></div>
+	</div> 
+	<p><button class="btn"> Click me!</button></p> 
+	<p><button class="btn"> No Click me!</button></p>
+	
+	<div class="flex-container">
+		<div id="item4"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ex natus mollitia dolore neque voluptate aperiam provident voluptas nisi reprehenderit, nulla distinctio aliquam blanditiis, sequi repudiandae sapiente suscipit fugit, qui maxime aliquid architecto impedit. Maiores laboriosam quod eius, facilis magni laudantium quia vel doloremque asperiores reiciendis, tempora optio ducimus quam! </p> </div>
+		<div id="item5"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quidem, quas dolorum nihil, tempore minus, dolor, id tempora dolores saepe corrupti iure reiciendis alias deleniti aperiam. Impedit ut rerum nobis minima debitis fuga, aliquid incidunt qui at quasi fugiat expedita a dolor porro est labore perferendis, similique ipsa quaerat.</p></div>
+	</div>
+	<footer>
+	<div class="flex-container">
+		<div id="item6"></div>
+		<div id="item7"><p> created by Jaryn McNeil</p></div>
+		<div id="item8"></div>
+	</div> 
+	</footer>
+</body>
+</html>
